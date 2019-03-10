@@ -58,14 +58,26 @@
     <!-- content -->
     <div class="login-page">
         <div class="list-group">
-          <h3 class="list-group-item active text-center">Login<br>Laptopku.com</h3>
+          <h3 class="list-group-item active text-center">Daftar<br>Laptopku.com</h3>
         </div>
         <div class="form">
-          <form class="login-form">
-                <input type="text" placeholder="Username - Min 8 Karakter" pattern="[a-zA-Z0-9_]{8,20}" required/>
-                <input type="password" placeholder="Password - Min 8 Karakter" pattern="[a-zA-Z0-9]{8,20}" required/>
-                <button>Login</button>
-                <p class="message">Belum punya akun? <a href="signup.html">Daftar disini</a></p>
+          <form>
+            <input type="text" placeholder="Nama - Min 8 Karakter" pattern="[a-zA-Z ]{8,50}" required/>
+            <input type="email" placeholder="Email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required/>
+            <input type="text" placeholder="Nomor Telepon" pattern="08[1-9]{9,11}" required/>
+            <select required>
+              <option>Daerah Domisili</option>
+              <option>Malang Kota</option>
+              <option>Malang Kabupaten</option>
+              <option>Surabaya Kota</option>
+              <option>Surabaya Kabupaten</option>
+              <option>Bandung Kota</option>
+              <option>Bandung Kabupaten</option>
+            </select><br>
+            <input type="text" placeholder="Username - Min 8 Karakter" pattern="[a-zA-Z0-9_]{8,20}" required/>
+            <input type="password" placeholder="Password - Min 8 Karakter" pattern="[a-zA-Z0-9]{8,20}" required/>
+            <button type="submit">Daftar</button>
+            <p class="message">Sudah punya akun? <a href="login.html">Login disini</a></p>
           </form>
         </div>
     </div>
@@ -93,7 +105,5 @@
     <script src="assets/js/jquery.cookie.js"> </script>
     <script src="assets/js/jquery.fancybox.min.js"></script>
     <script src="assets/js/front.js"></script>
-    <!-- js untuk form login -->
-    <script src="assets/js/custom.js"></script>
   </body>
 </html>

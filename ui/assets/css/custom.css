@@ -106,7 +106,7 @@ img{
 
 .login-page {
   width: 360px;
-  padding: 8% 0 0;
+  padding: 5% 0 0;
   margin: auto;
 }
 .form {
@@ -199,4 +199,15 @@ img{
 }
 .container .info span .fa {
   color: #EF3B3A;
+}
+
+.bg-header-login {
+  background: #0315ff;
+  border-radius: 7px;
+  height: 90px;
+  padding-top: 5px;
+}
+
+.bg-header-login h2 {
+  color: white;
 }
