@@ -87,19 +87,19 @@
                           <h3 class="my-4">Add User</h3>
                           <div class="form-group">
                             <label for="nama">Nama</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Nama">
+                            <input type="text" class="form-control" id="nama" placeholder="Nama - Min 8 Karakter" pattern="[a-zA-Z ]{8,50}" required>
                           </div>
                           <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
                           </div>
                           <div class="form-group">
                             <label for="phone_number">Nomor Telepon</label>
-                            <input type="text" class="form-control" id="phone_number" placeholder="Nomor Telepon">
+                            <input type="text" class="form-control" id="phone_number" placeholder="Nomor Telepon" pattern="08[1-9]{9,11}" required>
                           </div>
                           <div class="form-group">
                             <label for="daerah">Daerah</label>
-                            <select class="form-control" id="daerah">
+                            <select class="form-control" id="daerah" required>
                               <option>Malang Kota</option>
                               <option>Malang Kabupaten</option>
                               <option>Surabaya Kota</option>
@@ -110,11 +110,11 @@
                           </div>
                           <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="Username">
+                            <input type="text" class="form-control" id="username" placeholder="Username - Min 8 Karakter" pattern="[a-zA-Z0-9_]{8,20}" required>
                           </div>
                           <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <input type="password" class="form-control" id="password" placeholder="Password - Min 8 Karakter" pattern="[a-zA-Z0-9]{8,20}" required>
                           </div>
                           <button type="submit" class="btn essence-btn">Add User</button>
                         </form>
@@ -125,23 +125,23 @@
                           <h3 class="my-4">Edit User</h3>
                           <div class="form-group">
                             <label for="iduser">ID User</label>
-                            <input type="number" class="form-control" id="iduser" placeholder="id">
+                            <input type="text" class="form-control" id="iduser" placeholder="ID User yang akan diedit" pattern="[1-9][?0-9]{1,20}" required>
                           </div>
                           <div class="form-group">
                             <label for="nama">Nama</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Nama">
+                            <input type="text" class="form-control" id="nama" placeholder="Nama - Min 8 Karakter" pattern="[a-zA-Z ]{8,50}" required>
                           </div>
                           <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
                           </div>
                           <div class="form-group">
                             <label for="phone_number">Nomor Telepon</label>
-                            <input type="text" class="form-control" id="phone_number" placeholder="Nomor Telepon">
+                            <input type="text" class="form-control" id="phone_number" placeholder="Nomor Telepon" pattern="08[1-9]{9,11}" required>
                           </div>
                           <div class="form-group">
                             <label for="daerah">Daerah</label>
-                            <select class="form-control" id="daerah">
+                            <select class="form-control" id="daerah" required>
                               <option>Malang Kota</option>
                               <option>Malang Kabupaten</option>
                               <option>Surabaya Kota</option>
@@ -152,11 +152,11 @@
                           </div>
                           <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="Username">
+                            <input type="text" class="form-control" id="username" placeholder="Username - Min 8 Karakter" pattern="[a-zA-Z0-9_]{8,20}" required>
                           </div>
                           <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <input type="password" class="form-control" id="password" placeholder="Password - Min 8 Karakter" pattern="[a-zA-Z0-9]{8,20}" required>
                           </div>
                           <button type="submit" class="btn essence-btn">Edit User</button>
                         </form>
@@ -166,8 +166,8 @@
                         <form class="border-all">
                           <h3 class="my-4">Delete User</h3>
                           <div class="form-group">
-                            <label for="iduser">ID User</label>
-                            <input type="number" class="form-control" id="iduser" placeholder="id">
+                            <label for="iduserhapus">ID User</label>
+                            <input type="text" class="form-control" id="iduserhapus" pattern="[1-9][?0-9]{1,20}" placeholder="ID user yang akan dihapus" required>
                           </div>
                           <button type="submit" class="btn essence-btn">Delete User</button>
                         </form>

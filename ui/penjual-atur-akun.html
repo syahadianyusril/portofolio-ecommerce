@@ -88,19 +88,19 @@
                           <h3 class="my-4">Profile</h3>
                           <div class="form-group">
                             <label for="nama">Nama</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Nama">
+                            <input type="text" class="form-control" id="nama" placeholder="Nama - Min 8 Karakter" pattern="[a-zA-Z ]{8,50}" required>
                           </div>
                           <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
                           </div>
                           <div class="form-group">
                             <label for="phone_number">Nomor Telepon</label>
-                            <input type="text" class="form-control" id="phone_number" placeholder="Nomor Telepon">
+                            <input type="text" class="form-control" id="phone_number" placeholder="Nomor Telepon" pattern="08[1-9]{9,11}" required>
                           </div>
                           <div class="form-group">
                             <label for="daerah">Daerah</label>
-                            <select class="form-control" id="daerah">
+                            <select class="form-control" id="daerah" required>
                               <option>Malang Kota</option>
                               <option>Malang Kabupaten</option>
                               <option>Surabaya Kota</option>
@@ -111,11 +111,11 @@
                           </div>
                           <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="Username">
+                            <input type="text" class="form-control" id="username" placeholder="Username - Min 8 Karakter" pattern="[a-zA-Z0-9_]{8,20}" required>
                           </div>
                           <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <input type="password" class="form-control" id="password" placeholder="Password - Min 8 Karakter" pattern="[a-zA-Z0-9]{8,20}" required>
                           </div>
                           <button type="submit" class="btn essence-btn">Update Profil</button>
                         </form>

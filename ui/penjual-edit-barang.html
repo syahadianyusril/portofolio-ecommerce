@@ -85,18 +85,18 @@
                     <div class="row">
                       <div class="col-lg-12 col-md-6 mb-4">
                         <form class="border-all">
-                          <h3 class="my-4">Edit Barang (Merk dan Tipe Barang) </h3>
+                          <h3 class="my-4">Edit (Merk dan Type Laptop)</h3>
                           <div class="form-group">
                             <label for="Merk">Merk</label>
-                            <input type="text" class="form-control" id="Merk" placeholder="Merk">
+                            <input type="text" class="form-control" id="Merk" placeholder="Merk" required>
                           </div>
                           <div class="form-group">
                             <label for="Type">Type</label>
-                            <input type="Type" class="form-control" id="Type" aria-describedby="TypeHelp" placeholder="Type">
+                            <input type="Type" class="form-control" id="Type" aria-describedby="TypeHelp" placeholder="Type" required>
                           </div>
                           <div class="form-group">
                             <label for="category">Category</label>
-                            <select class="form-control" id="category">
+                            <select class="form-control" id="category" required>
                               <option>Gaming</option>
                               <option>Bisnis</option>
                               <option>Netbook</option>
@@ -107,46 +107,46 @@
                           </div>
                           <div class="form-group">
                             <label for="Kondisi">Kondisi</label>
-                            <select class="form-control" id="Kondisi">
+                            <select class="form-control" id="Kondisi" required>
                               <option>Baru</option>
                               <option>Bekas</option>
                             </select>                          
                           </div>
                           <div class="form-group">
                             <label for="Garansi">Garansi</label>
-                            <input type="text" class="form-control" id="Garansi" placeholder="Lama sisa garansi">
+                            <input type="text" class="form-control" id="Garansi" placeholder="Lama sisa garansi" required>
                           </div>
                           <div class="form-group">
                             <label for="Processor">Processor</label>
-                            <input type="text" class="form-control" id="Processor" placeholder="Processor">
+                            <input type="text" class="form-control" id="Processor" placeholder="Processor" required>
                           </div>
                           <div class="form-group">
                             <label for="VGA">VGA</label>
-                            <input type="text" class="form-control" id="VGA" placeholder="VGA">
+                            <input type="text" class="form-control" id="VGA" placeholder="VGA" required>
                           </div>
                           <div class="form-group">
                             <label for="RAM">RAM</label>
-                            <input type="text" class="form-control" id="RAM" placeholder="RAM">
+                            <input type="text" class="form-control" id="RAM" placeholder="RAM" required>
                           </div>
                           <div class="form-group">
                             <label for="Storage">Storage</label>
-                            <input type="text" class="form-control" id="Storage" placeholder="Storage">
+                            <input type="text" class="form-control" id="Storage" placeholder="Storage" required>
                           </div>
                           <div class="form-group">
                             <label for="Monitor">Monitor</label>
-                            <input type="text" class="form-control" id="Monitor" placeholder="Monitor">
+                            <input type="text" class="form-control" id="Monitor" placeholder="Monitor" required>
                           </div>
                           <div class="form-group">
                             <label for="Kelengkapan">Kelengkapan Barang</label>
-                            <textarea class="form-control" id="Kelengkapan" rows="3"></textarea>
+                            <textarea class="form-control" id="Kelengkapan" rows="3" required></textarea>
                           </div>
                           <div class="form-group">
                             <label for="Deskripsi">Deskripsi Barang</label>
-                            <textarea class="form-control" id="Deskripsi" rows="3"></textarea>
+                            <textarea class="form-control" id="Deskripsi" rows="3" required></textarea>
                           </div>
                           <div class="form-group">
                             <label for="Harga">Harga</label>
-                            <input type="number" class="form-control" id="Harga" placeholder="Harga">
+                            <input type="number" class="form-control" id="Harga" placeholder="Harga" pattern="[1-9][0-9]{3,20}" required>
                           </div>
                           <button type="submit" class="btn essence-btn">Update Barang</button>
                         </form>

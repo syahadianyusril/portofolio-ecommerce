@@ -59,18 +59,26 @@
     <div class="login-page">
         <div class="form">
           <form class="register-form">
-            <input type="text" placeholder="Nama"/>
-            <input type="email" placeholder="Email"/>
-            <input type="text" placeholder="Nomor Telepon"/>
-            <input type="text" placeholder="Daerah Domisili"/>
-            <input type="text" placeholder="Username"/>
-            <input type="password" placeholder="Password"/>
-            <button>Daftar</button>
+            <input type="text" placeholder="Nama - Min 8 Karakter" pattern="[a-zA-Z ]{8,50}" required/>
+            <input type="email" placeholder="Email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required/>
+            <input type="text" placeholder="Nomor Telepon" pattern="08[1-9]{9,11}" required/>
+            <select required>
+              <option>Daerah Domisili</option>
+              <option>Malang Kota</option>
+              <option>Malang Kabupaten</option>
+              <option>Surabaya Kota</option>
+              <option>Surabaya Kabupaten</option>
+              <option>Bandung Kota</option>
+              <option>Bandung Kabupaten</option>
+            </select><br>
+            <input type="text" placeholder="Username - Min 8 Karakter" pattern="[a-zA-Z0-9_]{8,20}" required/>
+            <input type="password" placeholder="Password - Min 8 Karakter" pattern="[a-zA-Z0-9]{8,20}" required/>
+            <button type="submit">Daftar</button>
             <p class="message">Sudah punya akun? <a href="#">Login disini</a></p>
           </form>
           <form class="login-form">
-                <input type="text" placeholder="Username"/>
-                <input type="password" placeholder="Password"/>
+                <input type="text" placeholder="Username - Min 8 Karakter" pattern="[a-zA-Z0-9_]{8,20}" required/>
+                <input type="password" placeholder="Password - Min 8 Karakter" pattern="[a-zA-Z0-9]{8,20}" required/>
                 <button>Login</button>
                 <p class="message">Belum punya akun? <a href="#">Daftar disini</a></p>
           </form>
