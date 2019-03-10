@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Laptopku - Item</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.blue.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="assets/css/core-style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- css icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="search-area">
+          <div class="search-area-inner d-flex align-items-center justify-content-center">
+            <div class="close-btn"><h3>X</h3></div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-8">
+                <form action="#">
+                  <div class="form-group">
+                    <input type="search" name="search" id="search" placeholder="Merk atau tipe laptop apa yang anda cari?">
+                    <button type="submit" class="submit" style="padding-right:15px;"><i class="fa fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <!-- Navbar Brand -->
+          <div class="navbar-header d-flex align-items-center justify-content-between">
+            <!-- Navbar Brand --><a href="index.html" id="besar">Laptopku.com</a>
+            <!-- Toggle Button-->
+            <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
+          </div>
+          <!-- Navbar Menu -->
+          <div id="navbarcollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li>
+                  <div class="navbar-text"><a href="login.html" class="nav-link ">Login <i class="fa fa-user"></i></a></div>
+                </li>
+                <li>
+                  <div class="navbar-text"><a href="#" class="nav-link search-btn">Cari laptop <i class="fa fa-search"></i></a></div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Content -->
+    <main>
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                  <!-- menu kategori -->
+                  <div class="col-lg-3">
+                    <h4 class="my-4">Dashboard Penjual</h4>
+                    <div class="list-group">
+                        <a href="#"><img class="card-img-top"src="http://placehold.it/700x400" alt=""></a>
+                        <a href="#" class="list-group-item">Nama Penjual</a>
+                    </div>
+                    <h3 class="my-4">Menu</h3>
+                    <div class="list-group">
+                      <a href="penjual-atur-akun.html" class="list-group-item">Atur Akun</a>
+                      <a href="penjual-add-barang.html" class="list-group-item">Add Barang</a>
+                      <a href="penjual-atur-barang.html" class="list-group-item active">Atur barang</a>
+                    </div>
+                    <br>
+                    <div class="list-group">
+                      <a href="#" class="btn essence-btn" target="_blank">Logout</a>
+                    </div>
+
+                  </div>
+                  <hr>
+                  <!-- list item -->
+                  <div class="col-lg-9 garis">
+                    <div class="row">
+                      <div class="col-lg-12 col-md-6 mb-4">
+                        <form class="border-all">
+                          <h3 class="my-4">Edit Barang (Merk dan Tipe Barang) </h3>
+                          <div class="form-group">
+                            <label for="Merk">Merk</label>
+                            <input type="text" class="form-control" id="Merk" placeholder="Merk">
+                          </div>
+                          <div class="form-group">
+                            <label for="Type">Type</label>
+                            <input type="Type" class="form-control" id="Type" aria-describedby="TypeHelp" placeholder="Type">
+                          </div>
+                          <div class="form-group">
+                            <label for="category">Category</label>
+                            <select class="form-control" id="category">
+                              <option>Gaming</option>
+                              <option>Bisnis</option>
+                              <option>Netbook</option>
+                              <option>Ultrabook</option>
+                              <option>Hybrid</option>
+                              <option>Convertible</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="Kondisi">Kondisi</label>
+                            <select class="form-control" id="Kondisi">
+                              <option>Baru</option>
+                              <option>Bekas</option>
+                            </select>                          
+                          </div>
+                          <div class="form-group">
+                            <label for="Garansi">Garansi</label>
+                            <input type="text" class="form-control" id="Garansi" placeholder="Lama sisa garansi">
+                          </div>
+                          <div class="form-group">
+                            <label for="Processor">Processor</label>
+                            <input type="text" class="form-control" id="Processor" placeholder="Processor">
+                          </div>
+                          <div class="form-group">
+                            <label for="VGA">VGA</label>
+                            <input type="text" class="form-control" id="VGA" placeholder="VGA">
+                          </div>
+                          <div class="form-group">
+                            <label for="RAM">RAM</label>
+                            <input type="text" class="form-control" id="RAM" placeholder="RAM">
+                          </div>
+                          <div class="form-group">
+                            <label for="Storage">Storage</label>
+                            <input type="text" class="form-control" id="Storage" placeholder="Storage">
+                          </div>
+                          <div class="form-group">
+                            <label for="Monitor">Monitor</label>
+                            <input type="text" class="form-control" id="Monitor" placeholder="Monitor">
+                          </div>
+                          <div class="form-group">
+                            <label for="Kelengkapan">Kelengkapan Barang</label>
+                            <textarea class="form-control" id="Kelengkapan" rows="3"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="Deskripsi">Deskripsi Barang</label>
+                            <textarea class="form-control" id="Deskripsi" rows="3"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="Harga">Harga</label>
+                            <input type="number" class="form-control" id="Harga" placeholder="Harga">
+                          </div>
+                          <button type="submit" class="btn essence-btn">Update Barang</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- pagination -->
+    
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <!-- footer atas -->
+      <div class="container d-none d-sm-block padding-top-40">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="logo">
+              <h6 class="text-white">Laptopku.com</h6>
+            </div>
+            <div class="contact-details">
+              <p>Jl. Raya Tidar No.23, Karangbesuki</p>
+              <p>Sukun, Kota Malang, Jawa Timur 65146</p>
+              <p>Phone: 081 335 826 212</p>
+              <p>Email: <a href="mailto:isha@alphatech.id">isha@alphatech.id</a></p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="menus d-flex pull-right">
+                <ul class="list-unstyled">
+                    <li> <a href="https://academy.alphatech.id/" target="_blank">Partner Kami</a></li>
+                    <li> <a href="faq.html" target="_blank">FAQ</a></li>
+                    <li> <a href="how-to.html" target="_blank">Cara Iklan dan Belanja</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer atas saat tampilan kecil -->
+      <div class="container d-block d-sm-none padding-top-40">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="logo">
+              <h6 class="text-white">Laptopku.com</h6>
+            </div>
+            <div class="contact-details">
+              <p>Email: <a href="mailto:isha@alphatech.id">isha@alphatech.id</a></p>
+              <ul class="list-unstyled">
+                  <li> <a href="https://academy.alphatech.id/" target="_blank" style="text-decoration: none;">Partner Kami</a></li>
+                  <li> <a href="faq.html" target="_blank" style="text-decoration: none;">FAQ</a></li>
+                  <li> <a href="how-to.html" target="_blank" style="text-decoration: none;">Cara Iklan dan Belanja</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer bawah -->
+      <div class="copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2019. All rights reserved. Laptopku.com</p>
+            </div>
+            <div class="col-md-6 text-right">
+              <p>Developed By <a href="https://github.com/syahadianyusril" class="text-white" target="_blank">Syahadian Yusril Isha</a>
+                <!-- Please do not remove the backlink to Bootstrap Temple unless you purchase an attribution-free license @ Bootstrap Temple or support us at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :)                         -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- js untuk search -->
+    <script src="assets/js/jquery.cookie.js"> </script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/front.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
